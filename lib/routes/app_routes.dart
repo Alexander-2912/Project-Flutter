@@ -16,6 +16,10 @@ import 'package:RideFlow/presentation/e_wallet_bank_transfer_screen/e_wallet_ban
 import 'package:RideFlow/presentation/e_wallet_points_screen/e_wallet_points_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_success_payment_screen/e_wallet_success_payment_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_main_screen/e_wallet_main_screen.dart';
+import 'package:RideFlow/presentation/setting_screen/setting_screen.dart';
+import 'package:RideFlow/presentation/profile_screen/profile_screen.dart';
+import 'package:RideFlow/presentation/help_screen/help_screen.dart';
+import 'package:RideFlow/presentation/e_wallet_topup_screen/e_wallet_topup_screen.dart';
 
 class AppRoutes {
   static const String orderScreen = '/order_screen';
@@ -85,5 +89,9 @@ class AppRoutes {
     eWalletPointsScreen: (context) => EWalletPointsScreen(),
     eWalletSuccessPaymentScreen: (context) => EWalletSuccessPaymentScreen(),
     eWalletMainScreen: (context) => EWalletMainScreen(),
+    settingScreen: (context) => SettingScreen(),
+    profileScreen: (context) => ProfileScreen(),
+    helpScreen: (context) => HelpScreen(),
+    eWalletTopupScreen: (context) => EWalletTopupScreen(),
   };
 }
