@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:RideFlow/presentation/main_screen_page/main_screen_page.dart';
+import 'package:RideFlow/presentation/order_screen/order_screen.dart';
+import 'package:RideFlow/presentation/after_order_screen/after_order_screen.dart';
+import 'package:RideFlow/presentation/chat_screen/chat_screen.dart';
+import 'package:RideFlow/presentation/e_wallet_credit_card_screen/e_wallet_credit_card_screen.dart';
 import 'package:RideFlow/presentation/login_screen/login_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_transaction_history_screen/e_wallet_transaction_history_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_transaction_details_screen/e_wallet_transaction_details_screen.dart';
@@ -10,6 +14,7 @@ import 'package:RideFlow/presentation/promos_screen/promos_screen.dart';
 import 'package:RideFlow/presentation/subscribe_screen/subscribe_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_bank_transfer_screen/e_wallet_bank_transfer_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_points_screen/e_wallet_points_screen.dart';
+
 class AppRoutes {
   static const String orderScreen = '/order_screen';
 
@@ -43,8 +48,7 @@ class AppRoutes {
 
   static const String inboxScreen = '/inbox_screen';
 
-  static const String subscribeScreen =
-      '/subscribe_screen';
+  static const String subscribeScreen = '/subscribe_screen';
 
   static const String eWalletTopupScreen = '/e_wallet_topup_screen';
 
@@ -61,13 +65,19 @@ class AppRoutes {
 
   static Map<String, WidgetBuilder> routes = {
     mainScreenPage: (context) => MainScreenPage(),
+    orderScreen: (context) => OrderScreen(),
+    afterOrderScreen: (context) => AfterOrderScreen(),
     loginScreen: (context) => LoginScreen(),
-    eWalletTransactionHistoryScreen: (context) => EWalletTransactionHistoryScreen(),
-    eWalletTransactionDetailsScreen: (context) => EWalletTransactionDetailsScreen(),
+    eWalletTransactionHistoryScreen: (context) =>
+        EWalletTransactionHistoryScreen(),
+    eWalletTransactionDetailsScreen: (context) =>
+        EWalletTransactionDetailsScreen(),
+    chatScreen: (context) => ChatScreen(),
     registerScreen: (context) => RegisterScreen(),
     promosScreen: (context) => PromosScreen(),
     inboxScreen: (context) => InboxScreen(),
     subscribeScreen: (context) => SubscribeScreen(),
+    eWalletCreditCardScreen: (context) => EWalletCreditCardScreen(),
     eWalletBankTransferScreen: (context) => EWalletBankTransferScreen(),
     eWalletContactTransferScreen: (context) => EWalletContactTransferScreen(),
     eWalletPointsScreen: (context) => EWalletPointsScreen(),
