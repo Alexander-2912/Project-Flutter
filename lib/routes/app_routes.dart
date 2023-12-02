@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:RideFlow/presentation/main_screen_page/main_screen_page.dart';
 import 'package:RideFlow/presentation/login_screen/login_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_transaction_history_screen/e_wallet_transaction_history_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_transaction_details_screen/e_wallet_transaction_details_screen.dart';
 import 'package:RideFlow/presentation/register_screen/register_screen.dart';
 import 'package:RideFlow/presentation/inbox_screen/inbox_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_contact_transfer_screen/e_wallet_contact_transfer_screen.dart';
+import 'package:RideFlow/presentation/promos_screen/promos_screen.dart';
+import 'package:RideFlow/presentation/subscribe_screen/subscribe_screen.dart';
+import 'package:RideFlow/presentation/e_wallet_bank_transfer_screen/e_wallet_bank_transfer_screen.dart';
 import 'package:RideFlow/presentation/e_wallet_points_screen/e_wallet_points_screen.dart';
 class AppRoutes {
   static const String orderScreen = '/order_screen';
@@ -56,11 +60,15 @@ class AppRoutes {
   static const String eWalletCreditCardScreen = '/e_wallet_credit_card_screen';
 
   static Map<String, WidgetBuilder> routes = {
+    mainScreenPage: (context) => MainScreenPage(),
     loginScreen: (context) => LoginScreen(),
     eWalletTransactionHistoryScreen: (context) => EWalletTransactionHistoryScreen(),
     eWalletTransactionDetailsScreen: (context) => EWalletTransactionDetailsScreen(),
     registerScreen: (context) => RegisterScreen(),
+    promosScreen: (context) => PromosScreen(),
     inboxScreen: (context) => InboxScreen(),
+    subscribeScreen: (context) => SubscribeScreen(),
+    eWalletBankTransferScreen: (context) => EWalletBankTransferScreen(),
     eWalletContactTransferScreen: (context) => EWalletContactTransferScreen(),
     eWalletPointsScreen: (context) => EWalletPointsScreen(),
   };
