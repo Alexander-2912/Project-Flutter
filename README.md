@@ -5,3 +5,5 @@
 # Angeline Shevenia - 535220108
 
 # Iqbal Alfaridzi Balman - 535220248
+
+# Naswa Azahra - 535220252
